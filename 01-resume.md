@@ -6,8 +6,10 @@ permalink: /resume/
 ---
 <div style="text-align: center; border-bottom: 1px solid #ccc; padding-bottom:10px; margin-bottom: 10px;">
 <h1 style="clear:both;">Jake Maskiewicz</h1>
-<strong>Software Engineer and Web Developer</strong>
+<strong>Software Engineer and Security Researcher</strong>
 </div>
+
+{% include resume/publications.md %}
 
 {% include resume/experience.md %}
 

@@ -24,7 +24,7 @@ application for our product.
 
 #### Front End Developer - *Variable Action*
 
-**August 2011 - June 2012** - *php mysql javascript*
+**August 2011 - June 2012** - *php, mysql, javascript*
 
 I was hired in Summer 2011 part time to help develop sites in Variable Action's
 innovative content management system, Zesty. My job is to develop brand new
