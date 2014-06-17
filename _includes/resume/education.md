@@ -2,10 +2,16 @@
 
 #### B.S. Computer Science - *University of California, San Diego*
 
-**Class of 2015** - *Data Structures, Algorithms, Programming Languages, Operating Systems, Compilers, Security*
+**Class of 2015** - *Data Structures, Algorithms, Programming Languages, Operating Systems, Compilers*
 
-I currently have senior standing in my third year as a Computer Science major
-in Warren College. I have received the Jacobs Engineering Scholarship, which is
-a full ride scholarship (tuition, housing, food, books, etc.) held by only 11
-students in my class.
+I am currently in my fourth year as a Computer Science major in Warren College.
+I have received the Jacobs Engineering Scholarship, which is a full scholarship
+(tuition, housing, food, books, etc.) awarded to only eleven students in my
+class.
 
+#### M.S. Computer Science - *University of California, San Diego*
+
+**Class of 2016** - *Security*
+
+I have been accepted into the five year BS/MS program, and will graduate in 2016
+with both degrees.

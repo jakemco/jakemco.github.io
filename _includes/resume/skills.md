@@ -1,5 +1,6 @@
 <h3>Skills</h3>
 <ul>
+<li>Graphics Programming</li>
 <li>Web Development</li>
 <li>Cloud Computing (Azure and AWS)</li>
 <li>iOS Development</li>
