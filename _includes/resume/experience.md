@@ -1,14 +1,3 @@
----
-layout: default
-title: Resume
-group: "navigation"
----
-<div style="text-align: center; border-bottom: 1px solid #ccc; padding-bottom:10px; margin-bottom: 10px;">
-<h1 style="clear:both;">Jake Maskiewicz</h1>
-<strong>Software Engineer and Web Developer</strong>
-</div>
-
-
 ### Experience
 
 #### Software Development Engineering Intern - *Microsoft*
@@ -57,43 +46,3 @@ our lab's neural analysis algorithm, Maximally Informative Dimensions (MID) to
 predict neural response to natural stimuli. After completing this project, I
 worked to prepare various data sets for further analysis by my team's
 researchers.
-
-
-### Education
-
-#### B.S. Computer Science - *University of California, San Diego*
-
-**Class of 2015** - *Data Structures, Algorithms, Programming Languages, Operating Systems, Compilers, Security*
-
-I currently have senior standing in my third year as a Computer Science major
-in Warren College. I have received the Jacobs Engineering Scholarship, which is
-a full ride scholarship (tuition, housing, food, books, etc.) held by only 11
-students in my class.
-
-<div style="float:left; width:45%;">
-<h3>Skills</h3>
-<ul>
-<li>Web Development</li>
-<li>Cloud Computing (Azure and AWS)</li>
-<li>iOS Development</li>
-<li>Java, C++, C#/.NET, Objective-C, C, Ruby, Haskell, Javascript, HTML/CSS and more</li>
-</ul>
-</div>
-
-<div style="float:right; width: 45%;">
-<h3>Examples</h3>
-<ul>
-<li>Variable Action using <a href="http://www.gozesty.com">Zesty CMS</a>
-    <ul>
-    <li><a href="http://www.heydayfootwear.com">Heyday Footwear</a></li>
-    <li><a href="http://www.shorelinemusic.com">Shoreline Music</a></li>
-    <li><a href="http://www.aem-usa.com">AEM USA</a></li>
-    </ul>
-</li>
-
-<li><a href="http://crossfitelite.net">CSE 110 - Crossfit Elite</a></li>
-<li><a href="http://github.com/jakemask">github.com/jakemask</a></li>
-</ul>
-</div>
-
-<br style="clear:both;">
