@@ -9,9 +9,9 @@ permalink: /resume/
 <strong>Software Engineer and Security Researcher</strong>
 </div>
 
-{% include resume/experience.md %}
-
 {% include resume/publications.md %}
+
+{% include resume/experience.md %}
 
 {% include resume/education.md %}
 
