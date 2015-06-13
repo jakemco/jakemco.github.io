@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script>console.log('pre-head');</script>
 	{% include head.html %}
-	<script>console.log('post-head');</script>
 </head>
 <body>
-	<script>console.log('pre-body');</script>
 	<div class="container-narrow">
 		{% include header.html %}
 		{{ content }}
@@ -23,6 +20,5 @@
 	ga('create', 'UA-41447824-1', 'jakemask.com');
 	ga('send', 'pageview');
 	</script>
-	<script>console.log('post-body');</script>
 </body>
 </html>

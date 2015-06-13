@@ -1,3 +1,9 @@
+---
+---
+@import "variables";
+@import "bootstrap";
+@import "bootswatch";
+
 body {
 	padding: 10px;
 	padding-top: 20px;
@@ -21,6 +27,7 @@ body {
 .jumbotron {
 	margin: 80px 0;
 	text-align: center;
+	background: #fff;
 }
 .jumbotron h1 {
 	font-size: 100px;
