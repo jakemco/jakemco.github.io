@@ -1,4 +1,5 @@
 #### Summer Engineering Intern - *Cisco Systems*
+{: #cisco}
 
 **June 2012 - September 2012** - *ruby, selenium-webdriver, objective-c, iOS, oracle, sql*
 

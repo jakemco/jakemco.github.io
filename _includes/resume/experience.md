@@ -1,4 +1,5 @@
 ### Experience
+{: #experience}
 
 {% include resume/experience/xbox.md %}
 
@@ -6,8 +7,10 @@
 
 {% include resume/experience/microsoft.md %}
 
+<div class="foldable">
 {% include resume/experience/cisco.md %}
 
 {% include resume/experience/variableaction.md %}
 
 {% include resume/experience/salk.md %}
+</div>

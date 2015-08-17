@@ -1,2 +1,5 @@
 permalink: pretty
 markdown: kramdown
+kramdown:
+    auto_ids: false
+    parse_block_html: true

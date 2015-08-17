@@ -1,4 +1,5 @@
 #### Lab Assistant - *The Salk Institute for Biological Studies*
+{: #salk}
 
 **June 2010 - December 2011** - *matlab, maximally-informative-dimensions, statistical-analysis*
 

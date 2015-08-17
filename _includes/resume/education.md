@@ -1,4 +1,5 @@
 ### Education
+{: #education}
 
 #### M.S. Computer Science - *University of California, San Diego*
 

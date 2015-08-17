@@ -1,6 +1,5 @@
-### Publications
-
 #### On the Practical Exploitability of Dual EC in TLS Implementations - *Usenix Security 2014*
+{: #dualec}
 
 **August 2014** - *research, security, TLS*
 

@@ -1,4 +1,5 @@
 #### Software Development Engineering Intern - *Microsoft*
+{: #microsoft}
 
 **June 2013 - September 2013** - *windows, azure, .net, c#*
 

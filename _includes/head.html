@@ -5,3 +5,17 @@
 	
 	<link href="/css/style.css" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+	$('.foldable').hide().after(
+		$('<a href="#">More...</a>').on('click', function(e) {
+			e.preventDefault();
+			$(this).prev().toggle();
+			if($(this).text()[0] === 'M') $(this).text('Hide');
+			else $(this).text('More...');
+
+		})
+	);
+});
+	</script>
