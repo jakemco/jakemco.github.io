@@ -1,6 +1,8 @@
 ### Experience
 {: #experience}
 
+{% include resume/experience/si.md %}
+
 {% include resume/experience/xbox.md %}
 
 {% include resume/experience/cse125.md %}
