@@ -9,7 +9,7 @@
 	<script>
 $(document).ready(function(){
 	$('.foldable').hide().after(
-		$('<a href="#">More...</a>').on('click', function(e) {
+		$('<a href="#" class="more">More...</a>').on('click', function(e) {
 			e.preventDefault();
 			$(this).prev().toggle();
 			if($(this).text()[0] === 'M') $(this).text('Hide');

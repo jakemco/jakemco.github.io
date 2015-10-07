@@ -5,13 +5,17 @@
 @import "bootswatch";
 
 body {
-	padding: 10px;
-	padding-top: 20px;
-	padding-bottom: 60px;
+	padding: 0 10px;
+	line-height: 15px;
+	margin-top: -10px;
 }
 
 .footer {
 	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
 }
 
 /* Custom container */
