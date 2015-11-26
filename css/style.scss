@@ -1,13 +1,28 @@
 ---
 ---
+@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto|Inconsolata);
+
 @import "variables";
 @import "bootstrap";
 @import "bootswatch";
+
 
 body {
 	padding: 10px;
 	padding-top: 20px;
 	padding-bottom: 60px;
+}
+
+.post {
+	font-size: 14pt;
+	line-height: 18pt;
+
+	pre {
+		margin: 1.5em 3em;
+	}
+	code {
+		font-size: 12pt;
+	}
 }
 
 .footer {

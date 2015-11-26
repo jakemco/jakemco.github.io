@@ -1,5 +1,15 @@
-permalink: pretty
+permalink: /blog/:title/
+highlighter: rouge
 markdown: kramdown
+excerpt_separator: <!--more-->
 kramdown:
     auto_ids: false
     parse_block_html: true
+
+defaults:
+    -
+        scope:
+            path: ""      # empty string for all files
+            type: posts   # limit to posts
+        values:
+            is_post: true # automatically set is_post=true for all posts
