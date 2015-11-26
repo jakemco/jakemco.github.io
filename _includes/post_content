@@ -9,7 +9,9 @@
 {% endif %}
 
 {% if page.is_post %}
+<div class="social">
 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=http://jakemask.com{{ page.url }}&via=jakemask&related=jakemask" rel="nofollow" target="_blank" title="Share on Twitter">Share this post on Twitter</a>
+</div>
 {% else %}
 <a href="{{ post.url }}">Read More...</a>
 {% endif %}
