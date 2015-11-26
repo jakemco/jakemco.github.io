@@ -1,0 +1,15 @@
+<h1>{% unless page.is_post %}<a href="{{ post.url }}" style="color:black">{% endunless %}{{ post.title }}{% unless page.is_post %}</a>{% endunless %} <small>{{ post.subtitle }}</small></h1>
+
+<h5>{{ post.date | date: '%B %d, %Y' }}</h5>
+<div class="post">
+{% if page.is_post %}
+{{ content }}
+{% else %}
+{{ post.excerpt }}
+{% endif %}
+
+{% unless page.is_post %}
+<a href="{{ post.url }}">Read More...</a>
+{% endunless %}
+
+</div>
