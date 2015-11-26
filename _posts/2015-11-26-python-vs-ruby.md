@@ -58,8 +58,9 @@ Ruby, on the other hand, prototypes in a much more straightforward manner.
 
 ![typing into ruby](/img/ruby.gif)
 
-In this case, Ruby's left to right style not only makes the code easier to
-read, but also makes it easier and faster to write in the first place. This is one
-reason among many that I prefer Ruby to Python.
+In this case, Ruby's left to right style not only makes the code easier to read,
+but also makes it easier and faster to write in the first place. If you read
+from left to right, you can simply type out the operations as you think of them.
+This is one reason among many that I prefer Ruby to Python.
 
 [nginx]: https://github.com/ctfs/write-ups-2015/tree/master/rctf-quals-2015/misc/analysis-nginxs-log
