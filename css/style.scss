@@ -23,10 +23,16 @@ body {
 	code {
 		font-size: 12pt;
 	}
+
+	margin-bottom: 1em;
 }
 
 .footer {
 	text-align: center;
+	margin-top: 1em;
+	.social {
+		margin-bottom: 1em;
+	}
 }
 
 /* Custom container */
