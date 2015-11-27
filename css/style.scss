@@ -23,12 +23,23 @@ body {
 	code {
 		font-size: 12pt;
 	}
+	img {
+		max-width: 100%;
+	}
 	.social {
 		text-align: center;
 		margin: 1em 0;
 	}
 
 	margin-bottom: 1em;
+}
+
+h1 > small {
+	line-height: 10px;
+}
+
+.nav-pills > li > a {
+	padding: 5px 10px;
 }
 
 .footer {

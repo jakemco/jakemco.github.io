@@ -1,4 +1,7 @@
-<h1>{% unless page.is_post %}<a href="{{ post.url }}" style="color:black">{% endunless %}{{ post.title }}{% unless page.is_post %}</a>{% endunless %} <small>{{ post.subtitle }}</small></h1>
+<h1>
+{% unless page.is_post %}<a href="{{ post.url }}" style="color:black">{%endunless %}
+{{ post.title }}{% unless page.is_post %}</a>{% endunless %} <br class="visible-xs-inline"/>
+<small>{{ post.subtitle }}</small></h1>
 
 <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
 <div class="post">
