@@ -1,5 +1,5 @@
 permalink: /blog/:title/
-highlighter: rouge
+highlighter: pygments
 markdown: kramdown
 excerpt_separator: <!--more-->
 kramdown:
