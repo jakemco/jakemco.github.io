@@ -1,5 +1,7 @@
 permalink: /blog/:title/
 highlighter: pygments
+url: https://jakemask.com
+enforce_ssl: jakemask.com
 markdown: kramdown
 excerpt_separator: <!--more-->
 kramdown:
