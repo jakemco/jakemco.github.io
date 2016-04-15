@@ -14,8 +14,12 @@ body {
 }
 
 .post {
-	font-size: 14pt;
-	line-height: 18pt;
+	font-size: 18px;
+	line-height: 24px;
+
+	p {
+		margin-bottom: 1em;
+	}
 
 	pre {
 		margin: 1.5em 3em;
@@ -32,6 +36,8 @@ body {
 	}
 
 	margin-bottom: 1em;
+
+
 }
 
 h1 > small {
