@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Azemar</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="capture"></div>
+    <script>
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 0, lng: 0},
+          zoom: 1,
+          streetViewControl: false,
+          mapTypeControlOptions: {
+            mapTypeIds: ['azemar']
+          }
+        });
+
+        var moonMapType = new google.maps.ImageMapType({
+          getTileUrl: function(coord, zoom) {
+              var normalizedCoord = getNormalizedCoord(coord, zoom);
+              if (!normalizedCoord) {
+                return null;
+              }
+              var bound = Math.pow(2, zoom);
+              return 'zoom' +
+                  '/' + zoom + '/' + normalizedCoord.x + '-' +
+                  (normalizedCoord.y) + '.png';
+          },
+          tileSize: new google.maps.Size(512, 512),
+          maxZoom: 3,
+          minZoom: 0,
+          radius: 1738000,
+          name: 'Azemar'
+        });
+
+        map.mapTypes.set('azemar', moonMapType);
+        map.setMapTypeId('azemar');
+      }
+
+      // Normalizes the coords that tiles repeat across the x axis (horizontally)
+      // like the standard Google map tiles.
+      function getNormalizedCoord(coord, zoom) {
+        var y = coord.y;
+        var x = coord.x;
+
+        // tile range in one direction range is dependent on zoom level
+        // 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
+        var tileRange = 1 << zoom;
+
+        // don't repeat across y-axis (vertically)
+        if (y < 0 || y >= tileRange) {
+          return null;
+        }
+
+        // repeat across x-axis
+        if (x < 0 || x >= tileRange) {
+          return null;
+        }
+
+        return {x: x, y: y};
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD368DjpWqTAYNEEr_w3TkSyCOapARvL7g&callback=initMap">
+    </script>
+  </body>
+</html>
