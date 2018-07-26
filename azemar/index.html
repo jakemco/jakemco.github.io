@@ -30,13 +30,18 @@
 
         var moonMapType = new google.maps.ImageMapType({
           getTileUrl: function(coord, zoom) {
+              console.log({zoom: zoom, x: coord.x, y: coord.y});
               var normalizedCoord = getNormalizedCoord(coord, zoom);
+              console.log(normalizedCoord);
               if (normalizedCoord == null) {
+                console.log('-> empty');
                 return 'zoom/empty.png';
               }
-              return 'zoom/' + zoom + '_' +
+              var path = 'zoom/' + zoom + '_' +
                   normalizedCoord.x + '_' +
                   normalizedCoord.y + '.png';
+              console.log(path);
+              return path;
           },
           tileSize: new google.maps.Size(512, 512),
           maxZoom: 4,
@@ -52,18 +57,15 @@
       // Normalizes the coords that tiles repeat across the x axis (horizontally)
       // like the standard Google map tiles.
       function getNormalizedCoord(coord, zoom) {
-        console.log(coord, zoom);
         var y = coord.y;
         var x = coord.x;
 
         // tile range in one direction range is dependent on zoom level
         // 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
         var tileRange = 1 << zoom;
-        console.log(tileRange);
 
         // don't repeat across y-axis (vertically)
         if (y < 0 || y >= tileRange) {
-          console.log('ret null');
           return null;
         }
 
@@ -72,7 +74,6 @@
           return null;
         }
 
-        console.log('ret', {x: x, y: y});
         return {x: x, y: y};
       }
     </script>
