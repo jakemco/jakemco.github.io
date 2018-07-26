@@ -63,6 +63,7 @@
 
         // don't repeat across y-axis (vertically)
         if (y < 0 || y >= tileRange) {
+          console.log('ret null');
           return null;
         }
 
@@ -71,6 +72,7 @@
           return null;
         }
 
+        console.log('ret', {x: x, y: y});
         return {x: x, y: y};
       }
     </script>
