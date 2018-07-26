@@ -37,15 +37,15 @@
                 console.log('-> empty');
                 return null;
               }
-              var path = 'zoom/' + zoom + '_' +
+              var path = 'zoom/' + (zoom - 1) + '_' +
                   normalizedCoord.x + '_' +
                   normalizedCoord.y + '.png';
               console.log(path);
               return path;
           },
           tileSize: new google.maps.Size(512, 512),
-          maxZoom: 4,
-          minZoom: 0,
+          maxZoom: 5,
+          minZoom: 1,
           radius: 1738000,
           name: 'Azemar'
         });
@@ -62,7 +62,7 @@
 
         // tile range in one direction range is dependent on zoom level
         // 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
-        var tileRange = 1 << zoom;
+        var tileRange = 1 << (zoom - 1);
 
         // don't repeat across y-axis (vertically)
         if (y < 0 || y >= tileRange) {
