@@ -35,12 +35,12 @@
                 return null;
               }
               var bound = Math.pow(2, zoom);
-              return 'zoom' +
-                  '/' + zoom + '/' + normalizedCoord.x + '-' +
-                  (normalizedCoord.y) + '.png';
+              return 'zoom/' + zoom + '_' +
+                  normalizedCoord.x + '_' +
+                  normalizedCoord.y + '.png';
           },
           tileSize: new google.maps.Size(512, 512),
-          maxZoom: 3,
+          maxZoom: 4,
           minZoom: 0,
           radius: 1738000,
           name: 'Azemar'
