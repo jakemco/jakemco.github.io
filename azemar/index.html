@@ -35,7 +35,7 @@
               console.log(normalizedCoord);
               if (normalizedCoord == null) {
                 console.log('-> empty');
-                return 'zoom/empty.png';
+                return null;
               }
               var path = 'zoom/' + zoom + '_' +
                   normalizedCoord.x + '_' +
