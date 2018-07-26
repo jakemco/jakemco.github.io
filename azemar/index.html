@@ -31,8 +31,8 @@
         var moonMapType = new google.maps.ImageMapType({
           getTileUrl: function(coord, zoom) {
               var normalizedCoord = getNormalizedCoord(coord, zoom);
-              if (!normalizedCoord) {
-                return null;
+              if (normalizedCoord == null) {
+                return 'zoom/empty.png';
               }
               var bound = Math.pow(2, zoom);
               return 'zoom/' + zoom + '_' +
@@ -65,7 +65,7 @@
           return null;
         }
 
-        // repeat across x-axis
+        // don't repeat across x-axis
         if (x < 0 || x >= tileRange) {
           return null;
         }
