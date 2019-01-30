@@ -3,7 +3,7 @@
 
 **August 2014** - *research, security, reverse engineering, firmware*
 
-I worked with Ben Ellis, James Mouradian, and Hovav Schacham to demonstrate an
+I worked with Ben Ellis, James Mouradian, and Hovav Shacham to demonstrate an
 end to end firmware exploitation of a gaming mouse. Although many users are aware
 of the threats that malware pose, users are unaware that malware can infect
 peripheral devices. Many embedded devices support firmware update capabilities, yet
