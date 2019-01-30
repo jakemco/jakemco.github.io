@@ -7,9 +7,9 @@
 
 {% include resume/experience/xbox.md %}
 
+<div class="foldable">
 {% include resume/experience/cse125.md %}
 
-<div class="foldable">
 {% include resume/experience/microsoft.md %}
 
 {% include resume/experience/cisco.md %}
