@@ -1,4 +1,4 @@
-#### On the Practical Exploitability of Dual EC in TLS Implementations - *Usenix Security 2014*
+#### [On the Practical Exploitability of Dual EC in TLS Implementations](http://dualec.org/DualECTLS.pdf) - *Usenix Security 2014*
 {: #dualec}
 
 **August 2014** - *research, security, TLS*

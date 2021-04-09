@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Blog
-group: "navigation"
 permalink: /blog/
 is_blog: true
 ---

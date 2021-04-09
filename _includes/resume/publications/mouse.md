@@ -1,4 +1,4 @@
-#### Mouse Trap: Exploiting Firmware Updates in USB Peripherals - *Usenix WOOT 2014*
+#### [Mouse Trap: Exploiting Firmware Updates in USB Peripherals](https://www.usenix.org/conference/woot14/workshop-program/presentation/maskiewicz) - *Usenix WOOT 2014*
 {: #mouse}
 
 **August 2014** - *research, security, reverse engineering, firmware*
