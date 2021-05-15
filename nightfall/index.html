@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nightfall</title>
+  <style>
+    html,
+    body {
+      background: #333;
+      color: #eee;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .comic {
+      height: 80vh;
+      margin: 50px auto;
+    }
+
+    .comic.zoom {
+      height: auto;
+      width: 80vw;
+    }
+
+    img.page {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    a {
+      color: rgb(105, 182, 245);
+    }
+
+    .controls {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Nightfall</h1>
+  <div class="controls">
+    <a href="#" class="prev">Prev</a>
+    <a href="#" class="next">Next</a>
+  </div>
+  <div class="comic" id="comic">
+    <img class="page" src="pages/consortium-01.png" />
+    <img class="page" src="pages/consortium-02.png" />
+    <img class="page" src="pages/consortium-03.png" />
+  </div>
+  <div class="controls">
+    <a href="#" class="prev">Prev</a>
+    <a href="#" class="next">Next</a>
+  </div>
+  <div class="footer">
+    Nightfall Comics by Jake Cordero. Copyright 2021, All Rights Reserved.
+  </div>
+
+  <script>
+    let pages = document.getElementsByClassName('page');
+    let [first, ...rest] = pages;
+
+    rest.forEach(elt => elt.classList.add('hidden'));
+
+    let current = 0;
+
+    for (let elt of document.getElementsByClassName('prev')) {
+      elt.addEventListener('click', e => {
+        e.preventDefault();
+        if (current === 0) {
+          return;
+        }
+
+        pages[current].classList.add('hidden');
+        current -= 1;
+        pages[current].classList.remove('hidden');
+        window.scrollTo(0,0);
+      });
+    }
+    for (let elt of document.getElementsByClassName('next')) {
+      elt.addEventListener('click', e => {
+        e.preventDefault();
+        if (current === pages.length - 1) {
+          return;
+        }
+
+        pages[current].classList.add('hidden');
+        current += 1;
+        pages[current].classList.remove('hidden');
+        window.scrollTo(0,0);
+      });
+    }
+
+    for (let elt of document.getElementsByClassName('page')) {
+      elt.addEventListener('click', e => {
+        let comic = document.getElementById('comic');
+        comic.classList.toggle('zoom');
+      });
+    }
+  </script>
+</body>
+
+</html>
